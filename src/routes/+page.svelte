@@ -134,6 +134,16 @@
     margin-right: 10px;
   }
 
+  .sessionBoard .heading .settingsIcon {
+    position: relative;
+    background: url(https://api.iconify.design/carbon:settings.svg) center/cover no-repeat;
+    order: 9999;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    fill: aquamarine;
+  }
+
   .sessionBoard .body {
     position: relative;
     width: 100%;
@@ -181,6 +191,9 @@
           <div class="lastUsed">
             Last used: 2025/12/25
           </div>
+          <svg class="settingsIcon">
+
+          </svg>
         </div>
         <div class="body">
           <div class="button">
