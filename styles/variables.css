@@ -1,0 +1,8 @@
+
+:root {
+  /* navigation bar */
+  --nav-height: 50px;
+
+  /* body */
+  --body-margin-top: var(var(--nav-height));
+}
