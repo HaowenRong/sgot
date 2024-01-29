@@ -1,7 +1,8 @@
 <script>
+  import Session from "./session.svelte";
+
 	var boardName = "Board Name Placeholder";
-  var sessionName = "Session Name Placeholder";
-  var lastUsed = "2025/12/25";
+  const testArray = [1, 2, 3, 4, 5];
 </script>
 
 <div class=boardContainer>
@@ -16,28 +17,22 @@
   <div class=board>
     <div class="inner">
 
-      <div class="sessionBoard">
-        <div class="heading">
-          <div class="title">
-            {sessionName}
-          </div>
-          <div class="lastUsed">
-            Last used: {lastUsed}
-          </div>
-          <svg class="settingsIcon" />
-        </div>
+      {#each testArray as num}
+        <Session sessionName="Placeholder name {num}"
+                 lastUsed   ="2025/12/25"/>
+      {/each}
 
-        <!--
-        <div class="body">
-          <div class="button">
-            View session
-          </div>
-          <div class="button">
-            Manage session
-          </div>
+      <!--
+      <div class="body">
+        <div class="button">
+          View session
         </div>
-        -->
+        <div class="button">
+          Manage session
+        </div>
       </div>
+      -->
+
     </div>
   </div>
 </div>

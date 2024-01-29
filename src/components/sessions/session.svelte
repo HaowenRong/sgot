@@ -1,0 +1,121 @@
+<script>
+
+   /**
+     * @type {string}
+     */
+    export var sessionName;
+
+   /**
+     * @type {string}
+     */
+    export var lastUsed;
+</script>
+
+
+<div class="sessionBoard">
+  <div class="heading">
+    <div class="title">
+      {sessionName}
+    </div>
+    <div class="lastUsed">
+      Last used: {lastUsed}
+    </div>
+    <svg class="settingsIcon" />
+  </div>
+</div>
+
+<style>
+    .sessionBoard {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: nowrap;
+    align-self: start;
+    overflow: hidden;
+  }
+
+  .sessionBoard .heading {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(69, 71, 75, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .sessionBoard .heading .title {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
+    
+    width: 100%;
+    letter-spacing: 0px;
+  }
+
+  .sessionBoard .heading .title:hover {
+    cursor: pointer;
+  }
+
+  .sessionBoard .heading .lastUsed {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+
+  .sessionBoard .heading .settingsIcon {
+    position: fixed;
+    align-self: self-end;
+    background: url(https://api.iconify.design/carbon:settings.svg) center/cover no-repeat;
+    order: 9999;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    margin-right: 20px;
+  }
+
+  .sessionBoard .heading .settingsIcon:hover {
+    cursor: pointer;
+  }
+
+  .sessionBoard .body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .sessionBoard .body .button {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    background-color: rgba(240, 240, 240, 1);
+  }
+
+  .sessionBoard .body .button:hover {
+    cursor: pointer;
+  }
+</style>
