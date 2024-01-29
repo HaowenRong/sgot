@@ -1,5 +1,7 @@
 <script>
-	// logic goes here
+	var boardName = "Board Name Placeholder";
+  var sessionName = "Session Name Placeholder";
+  var lastUsed = "2025/12/25";
 </script>
 
 <div class=boardContainer>
@@ -8,7 +10,7 @@
 
     </div>
     <div class="title">
-      Sessions
+      {boardName}
     </div>
   </div>
   <div class=board>
@@ -17,13 +19,15 @@
       <div class="sessionBoard">
         <div class="heading">
           <div class="title">
-            Session Name
+            {sessionName}
           </div>
           <div class="lastUsed">
-            Last used: 2025/12/25
+            Last used: {lastUsed}
           </div>
           <svg class="settingsIcon" />
         </div>
+
+        <!--
         <div class="body">
           <div class="button">
             View session
@@ -32,20 +36,8 @@
             Manage session
           </div>
         </div>
+        -->
       </div>
-
-      <div class="sessionBoard">
-        <div class="heading">
-          <div class="title">
-            Session Name
-          </div>
-          <div class="lastUsed">
-            Last used: 2025/12/25
-          </div>
-          <svg class="settingsIcon" />
-        </div>
-      </div>
-
     </div>
   </div>
 </div>
@@ -77,17 +69,6 @@
     margin-top: 18px;
   }
 
-  .board .header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 38px;
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 1;
-    overflow: hidden;
-  }
-
   .board .inner {
     border-radius: 20px;
     position: relative;
@@ -110,13 +91,12 @@
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 1);
     display: flex;
+    gap: 5px;
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    gap: 5px;
     padding: 5px 5px;
-    flex-wrap: nowrap;
-    margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 30px;
     z-index: 1;
   }
 
@@ -147,7 +127,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 18px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -169,7 +149,7 @@
     align-items: baseline;
     justify-content: space-between;
     gap: 0px;
-    padding: 0px 0px 0px;
+    padding: 10px;
     flex-wrap: nowrap;
   }
 
@@ -180,9 +160,8 @@
     font-size: 22px;
     font-weight: 400;
     
+    width: 100%;
     letter-spacing: 0px;
-    margin-top: 10px;
-    margin-left: 10px;
   }
 
   .sessionBoard .heading .title:hover {
@@ -196,8 +175,6 @@
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0px;
-    margin-right: 10px;
-    margin-bottom: 10px;
   }
 
   .sessionBoard .heading .settingsIcon {
@@ -208,6 +185,7 @@
     width: 30px;
     height: 30px;
     margin: 10px;
+    margin-right: 20px;
   }
 
   .sessionBoard .heading .settingsIcon:hover {
