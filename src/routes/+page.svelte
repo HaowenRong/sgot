@@ -1,7 +1,8 @@
 
 <script>
   import NavBar from '../components/navBar/navBar.svelte'
-  import SessionsBoard from '../components/sessions/sessionBoard.svelte'
+  import Board from '../components/sessions/sessionBoard.svelte'
+
 </script>
 
 <style>
@@ -18,9 +19,9 @@
   }
 </style>
 
-<NavBar />
+<NavBar currPage="Home"/>
 
 <div class="sessions-board">
-  <SessionsBoard />
-  <SessionsBoard />
+  <Board boardName="Board name placeholder 1"/>
+  <Board boardName="Board name placeholder 2"/>
 </div>
