@@ -7,7 +7,9 @@
 
 <div class="navBarContainer">
   <div class="left">
-    left
+    <div class="title">
+      SGOT
+    </div>
   </div>
   <div class="middle">
     <div class="content">
@@ -62,6 +64,18 @@
     padding: 50px;
     flex-wrap: nowrap;
     align-self: center;
+  }
+
+  .navBarContainer .left .title {
+    width: auto;
+    color: rgba(69, 71, 75, 1);
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .navBarContainer .left .title:hover {
+    cursor: pointer;
   }
 
   .navBarContainer .middle {
