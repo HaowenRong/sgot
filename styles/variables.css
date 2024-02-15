@@ -4,5 +4,8 @@
   --nav-height: 60px;
 
   /* body */
-  --body-margin-top: var(var(--nav-height));
+  --body-margin-top: var(--nav-height);
+
+  /* colors */
+
 }

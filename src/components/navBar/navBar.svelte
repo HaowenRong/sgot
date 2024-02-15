@@ -1,11 +1,13 @@
 <script>
+  import AccountsPill from "./accountsPill.svelte";
+  
 	/**
      * @type {string}
      */
 	 export var currPage;
 </script>
 
-<div class="navBarContainer">
+<div class="navBarContainer unselectable">
   <div class="left">
     <div class="title">
       SGOT
@@ -13,28 +15,22 @@
   </div>
   <div class="middle">
     <div class="content">
-      <div class="icon">
-
-      </div>
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M8 30H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4v-4zm14 6h-4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4v-4zm14 6h-4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4v-4zM8 20H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4v-4zm14 6h-4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4v-4zm14 6h-4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4v-4zM8 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M4 4v4h4V4zm14 6h-4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4V4zm14 6h-4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4-6v4h4V4z"/>
+      </svg>
       <div class="title">
         {currPage}
       </div>
     </div>
   </div>
   <div class="right">
-    <div class="accounts-pill">
-      <div class="account-name">
-        Accounts
-      </div>
-      <div class="account-picture">
-
-      </div>
-    </div>
+    <AccountsPill accountName="Account" />
   </div>
 </div>
 
 <style>
   @import '/styles/variables.css';
+  @import '/styles/common.css';
 	.navBarContainer {
     position: fixed;
     top: 0;
@@ -50,6 +46,7 @@
     gap: 0px;
     padding: 0px 0px;
     flex-wrap: nowrap;
+    z-index: 9999;
   }
 
   .navBarContainer .left {
@@ -107,10 +104,10 @@
 
   .navBarContainer .middle .content .icon {
     position: relative;
-    background: url(https://api.iconify.design/carbon:user-avatar-filled.svg) center/cover no-repeat;
     order: -1;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
+    color: rgba(69, 71, 75, 1);
   }
 
   .navBarContainer .middle .content .title {
@@ -119,7 +116,7 @@
     color: rgba(69, 71, 75, 1);
     font-family: 'Noto Sans Display';
     font-style: normal;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
   }
 
@@ -134,38 +131,6 @@
     gap: 0px;
     padding: 50px;
     flex-wrap: nowrap;
-  }
-
-  .accounts-pill {
-    position: relative;
-    width: auto;
-    height: 20px;
-    border-radius: 40px;
-    background-color: rgba(240, 240, 240, 1);
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: start;
-    padding: 10px 5px 10px 5px;
-    flex-wrap: nowrap;
-  }
-
-  .accounts-pill .account-name {
-    width: auto;
-    height: auto;
-    margin: 0px 10px;
-    color: rgba(69, 71, 75, 1);
-    font-family: 'Noto Emoji';
-    font-style: normal;
-    font-size: 28px;
-    font-weight: 400;
-  }
-
-  .accounts-pill .account-picture {
-    order: -1;
-    background: url(https://api.iconify.design/carbon:user-avatar-filled.svg) center/cover no-repeat;
-    width:  35px;
-    height: 35px;
   }
 
 </style>

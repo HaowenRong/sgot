@@ -20,8 +20,8 @@
     <div class="lastUsed">
       Last used: {lastUsed}
     </div>
-    <svg class="settingsIcon" />
   </div>
+  <svg class="settingsIcon" />
 </div>
 
 <style>
@@ -33,7 +33,7 @@
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: start;
     justify-content: start;
     flex-wrap: nowrap;
@@ -43,15 +43,18 @@
 
   .sessionBoard .heading {
     position: relative;
-    width: 100%;
+    width: calc(100% - 60px);
     height: auto;
     background-color: rgba(69, 71, 75, 1);
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
     gap: 0px;
     padding: 10px;
+    padding-left: 20px;
     flex-wrap: nowrap;
   }
 
@@ -59,11 +62,10 @@
     color: rgba(255, 255, 255, 1);
     font-family: 'Noto Sans Display';
     font-style: normal;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     
     width: 100%;
-    letter-spacing: 0px;
   }
 
   .sessionBoard .heading .title:hover {
@@ -79,18 +81,17 @@
     letter-spacing: 0px;
   }
 
-  .sessionBoard .heading .settingsIcon {
-    position: fixed;
-    align-self: self-end;
+  .sessionBoard .settingsIcon {
+    position: relative;
+    align-self: center;
     background: url(https://api.iconify.design/carbon:settings.svg) center/cover no-repeat;
     order: 9999;
     width: 30px;
     height: 30px;
     margin: 10px;
-    margin-right: 20px;
   }
 
-  .sessionBoard .heading .settingsIcon:hover {
+  .sessionBoard .settingsIcon:hover {
     cursor: pointer;
   }
 
