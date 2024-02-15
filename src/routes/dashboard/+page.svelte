@@ -17,9 +17,15 @@
     flex-wrap: nowrap;
     margin: 100px 0px 0px;
   }
+
+  @media (max-width: 950px) {
+  .sessions-board {
+    flex-direction: column;
+  }
+}
 </style>
 
-<NavBar currPage="Dashboard"/>
+
 
 <div class="sessions-board">
   <Board boardName="Board name placeholder 1"/>

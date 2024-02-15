@@ -111,7 +111,7 @@
     color: rgba(69, 71, 75, 1);
     font-family: 'Noto Sans Display';
     font-style: normal;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.0;
     letter-spacing: 0px;
