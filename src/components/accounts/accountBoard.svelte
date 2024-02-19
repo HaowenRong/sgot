@@ -30,7 +30,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--background-color);
     border-right: 2px solid var(--primary-color);
     box-sizing: border-box;
     padding: 40px;

@@ -1,5 +1,8 @@
 
 :root {
+  /* common values */
+
+
   /* navigation bar */
   --nav-height: 60px;
 
@@ -7,5 +10,7 @@
   --body-margin-top: var(--nav-height);
 
   /* colors */
-
+  --primary-color: rgba(69, 71, 75, 1);
+  --background-color: rgba(255, 255, 255, 1);
+  
 }

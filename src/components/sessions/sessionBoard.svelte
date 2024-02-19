@@ -60,8 +60,8 @@
     width: 100%;
     height: auto;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(69, 71, 75, 1);
+    background-color: var(--background-color);
+    border: 2px solid var(--primary-color);
     box-sizing: border-box;
     padding: 20px;
     margin-top: 18px;
@@ -87,7 +87,7 @@
     width: auto;
     height: auto;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--background-color);
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -108,7 +108,7 @@
 
   .pill .title {
     height: 100%;
-    color: rgba(69, 71, 75, 1);
+    color: var(--primary-color);
     font-family: 'Noto Sans Display';
     font-style: normal;
     font-size: 22px;

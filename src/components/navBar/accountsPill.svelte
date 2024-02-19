@@ -38,7 +38,7 @@
     width: auto;
     height: auto;
     margin: 0px 10px;
-    color: rgba(69, 71, 75, 1);
+    color: var(--primary-color);
     font-family: 'Noto Emoji';
     font-style: normal;
     font-size: 20px;
@@ -50,6 +50,6 @@
     background: url(https://api.iconify.design/carbon:user-avatar-filled.svg) center/cover no-repeat;
     width:  35px;
     height: 35px;
-    color: rgba(69, 71, 75, 1);
+    color: var(--primary-color);
   }
 </style>

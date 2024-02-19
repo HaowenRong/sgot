@@ -30,7 +30,7 @@
     width: 100%;
     height: auto;
     border-radius: 18px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--background-color);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
@@ -45,7 +45,7 @@
     position: relative;
     width: calc(100% - 60px);
     height: auto;
-    background-color: rgba(69, 71, 75, 1);
+    background-color: var(--primary-color);
     box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
     display: flex;
@@ -59,7 +59,7 @@
   }
 
   .sessionBoard .heading .title {
-    color: rgba(255, 255, 255, 1);
+    color: var(--background-color);
     font-family: 'Noto Sans Display';
     font-style: normal;
     font-size: 20px;
@@ -73,7 +73,7 @@
   }
 
   .sessionBoard .heading .lastUsed {
-    color: rgba(255, 255, 255, 1);
+    color: var(--background-color);
     font-family: 'Noto Sans Display';
     font-style: normal;
     font-size: 16px;
@@ -99,7 +99,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: start;

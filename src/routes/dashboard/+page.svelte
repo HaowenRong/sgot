@@ -1,8 +1,6 @@
 
 <script>
-  import NavBar from '../../components/navBar/navBar.svelte'
   import Board from '../../components/sessions/sessionBoard.svelte'
-
 </script>
 
 <style>
@@ -24,8 +22,6 @@
   }
 }
 </style>
-
-
 
 <div class="sessions-board">
   <Board boardName="Board name placeholder 1"/>

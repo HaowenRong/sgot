@@ -37,7 +37,7 @@
     left: 0;
     width: 100%;
     height: var(--nav-height);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--background-color);
     box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
@@ -65,7 +65,7 @@
 
   .navBarContainer .left .title {
     width: auto;
-    color: rgba(69, 71, 75, 1);
+    color: var(--primary-color);
     font-family: 'Noto Sans Display';
     font-style: normal;
     font-size: 28px;
@@ -107,13 +107,13 @@
     order: -1;
     width: 28px;
     height: 28px;
-    color: rgba(69, 71, 75, 1);
+    color: var(--primary-color);
   }
 
   .navBarContainer .middle .content .title {
     width: auto;
     height: 100%;
-    color: rgba(69, 71, 75, 1);
+    color: var(--primary-color);
     font-family: 'Noto Sans Display';
     font-style: normal;
     font-size: 24px;

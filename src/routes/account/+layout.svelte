@@ -3,6 +3,6 @@
 
 </script>
 
-<NavBar currPage="Dashboard"/>
+<NavBar currPage="Account"/>
 
 <slot />

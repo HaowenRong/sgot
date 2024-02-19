@@ -31,7 +31,7 @@
   }
 
   .accountOption .title {
-    color: rgba(255, 255, 255, 1);
+    color: var(--background-color);
     font-family: 'Noto Sans Display';
     font-style: normal;
     font-size: 20px;
