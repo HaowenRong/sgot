@@ -1,11 +1,4 @@
 <script>
-
-	/**
-     * @type {string}
-     */
-	 export var boardName;
-
-  const testArray = [1, 2, 3, 4, 5];
 </script>
 
 <div class=boardContainer>
@@ -14,7 +7,7 @@
 
     </div>
     <div class="title">
-      {boardName}
+      Match History
     </div>
   </div>
   <div class=board>
