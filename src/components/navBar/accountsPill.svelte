@@ -21,7 +21,7 @@
     width: auto;
     height: 20px;
     border-radius: 40px;
-    background-color: rgba(240, 240, 240, 1);
+    background-color: var(--accent-color);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;

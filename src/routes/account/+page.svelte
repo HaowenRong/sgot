@@ -10,12 +10,10 @@
   <div class="optionsSection">
     <OptionsBoard  />
   </div>
-  
 </div>
 
 <style>
   .mainBody {
-    left: 0px;
     margin-top: calc(var(--nav-height) + 40px);
     height: 80vh;
     padding: 20px;

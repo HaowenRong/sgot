@@ -22,7 +22,7 @@
   <div class="accountCreation">
     {accountCreation}
   </div>
-  <PrevMatches boardName="a"  />
+  <PrevMatches  />
 </div>
 
 <style>
