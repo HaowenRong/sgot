@@ -11,6 +11,10 @@
 
   /* colors */
   --primary-color: rgba(69, 71, 75, 1);
-  --background-color: rgba(255, 255, 255, 1);
+  --background-color: #f0f0f0;
   --accent-color: rgba(240, 240, 240, 1);
+}
+
+body {
+  background-color: #f0f0f0;
 }

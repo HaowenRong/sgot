@@ -13,7 +13,7 @@
     <div class="icon">
 
     </div>
-    <div class="title">
+    <div class="title unselectable">
       {boardName}
     </div>
   </div>

@@ -6,7 +6,7 @@
     <div class="icon">
 
     </div>
-    <div class="title">
+    <div class="title unselectable">
       Match History
     </div>
   </div>

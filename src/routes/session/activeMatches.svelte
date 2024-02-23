@@ -1,4 +1,5 @@
 <script>
+  import Match from "./match.svelte";
 </script>
 
 <div class=boardContainer>
@@ -6,11 +7,72 @@
     <div class="icon">
 
     </div>
-    <div class="title">
+    <div class="title unselectable">
       Active Matches
     </div>
   </div>
   <div class=board>
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+    
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+    
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
+    
+    <Match matchTitle="Title"
+           matchScoreLeft="15"
+           matchScoreRight="15"
+           startTime="Today at 15:00"
+           playersLeft={["P1", "P2"]}
+           playersRight={["P3", "P4"]}  />
   </div>
 </div>
 
@@ -18,7 +80,7 @@
   .boardContainer {
     margin-top: -10px;
     width: 100%;
-    height: auto;
+    height: 70vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -38,6 +100,20 @@
     box-sizing: border-box;
     padding: 20px;
     margin-top: 18px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 50px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+    overflow: scroll;
+
+    max-height: 70vi;
+
   }
 
   .pill {
