@@ -9,9 +9,9 @@
 
 <div class="navBarContainer unselectable">
   <div class="left">
-    <div class="title">
+    <a href='./dashboard' class="title">
       SGOT
-    </div>
+    </a>
   </div>
   <div class="middle">
     <div class="content">
@@ -64,6 +64,7 @@
   }
 
   .navBarContainer .left .title {
+    all: unset;
     width: auto;
     color: var(--primary-color);
     font-family: 'Noto Sans Display';

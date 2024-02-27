@@ -11,10 +11,10 @@
 
   /* colors */
   --primary-color: rgba(69, 71, 75, 1);
-  --background-color: #f0f0f0;
-  --accent-color: rgba(240, 240, 240, 1);
+  --background-color: #FEFBF9;
+  --accent-color: #EEECEA;
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
 }
