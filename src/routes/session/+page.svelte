@@ -4,7 +4,7 @@
   import ActiveMatches from "./activeMatches.svelte";
 </script>
 
-<div class="mainBody">
+<div class="container">
   <div class="session-info">
     <SessionInfo  />
   </div>
@@ -18,9 +18,8 @@
 </div>
 
 <style>
-  .mainBody {
+  .container {
     left: 0px;
-    margin-top: calc(var(--nav-height) + 40px);
     height: 80vh;
     padding: 20px;
     display: flex;

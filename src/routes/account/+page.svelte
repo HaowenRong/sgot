@@ -3,7 +3,7 @@
   import OptionsBoard from "../../components/accounts/optionsBoard.svelte";
 </script>
 
-<div class="mainBody">
+<div class="container">
   <div class="accountSection">
     <AccountBoard accountName="Placeholder Name" accountCreation="2025/12/25"  />
   </div>
@@ -13,8 +13,7 @@
 </div>
 
 <style>
-  .mainBody {
-    margin-top: calc(var(--nav-height) + 40px);
+  .container {
     height: 80vh;
     padding: 20px;
     display: flex;
@@ -31,7 +30,7 @@
   }
 
   @media (max-width: 950px) {
-    .mainBody {
+    .container {
       flex-direction: column;
     }
 

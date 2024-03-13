@@ -17,4 +17,8 @@
 
 body {
   background-color: var(--background-color);
+  left: 0px;
+  margin-top: calc(var(--nav-height) + 40px);
+  height: 80vh;
+  padding: 20px;
 }
