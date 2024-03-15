@@ -15,6 +15,11 @@
      * @type {string}
      */
    export let textValue;
+
+  /**
+     * @type {string}
+     */
+   export let errorMessage;
   
   /**
      * @type {any}
@@ -37,6 +42,14 @@
     top: 0;
     transition: top 0.1s ease-in-out;
   }
+
+  .error-message {
+    color: var(--error-color);
+    font-family: 'Noto Sans Display';
+    font-size: medium;
+    text-align: end;
+    padding-right: 5%;
+  }
 </style>
 
 <div>
@@ -44,9 +57,17 @@
     <input type='password' name={name} id={id}
            class="textField"
            bind:value={textValue} on:input={validation}>
+
+    <div class="error-message">
+      {errorMessage}
+    </div>
   {:else}
     <input type='text' name={name} id={id}
            class="textField"
            bind:value={textValue} on:input={validation}>
+
+    <div class="error-message">
+      {errorMessage}
+    </div>
   {/if}
 </div>
