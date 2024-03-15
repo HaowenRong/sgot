@@ -1,6 +1,6 @@
 <script>
-  import AccountBoard from "../../components/accounts/accountBoard.svelte";
-  import OptionsBoard from "../../components/accounts/optionsBoard.svelte";
+  import AccountBoard from "./accountBoard.svelte";
+  import OptionsBoard from "./optionsBoard.svelte";
 </script>
 
 <div class="container">
